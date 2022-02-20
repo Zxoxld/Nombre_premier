@@ -1,0 +1,17 @@
+def saiasirN():
+    n= int(input("Doner N : "))
+    while not(2<n<100):
+        n = int(input("Doner N (2<N<100) : "))
+    return n
+
+
+def nbprem(n):
+    nb=0
+    for i in range(1,n+1):
+        if(n%i==0):
+            nb+=1
+    return nb==2
+
+
+n=saiasirN()
+print(nbprem(n))
